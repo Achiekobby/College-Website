@@ -1,2 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 3.5em;
+}
+.header nav .logo {
+  width: 200px;
+  height: 50px;
+}
+.header nav .logo img {
+  width: 100%;
+}
+.header nav .nav-links {
+  width: 600px;
+}
+.header nav .nav-links ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 3.4em;
+}
+.header nav .nav-links ul li {
+  position: relative;
+  padding: 0.5em 1.2em;
+}
+.header nav .nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #F44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.header nav .nav-links ul li:hover::after {
+  width: 100%;
+}
+.header nav .nav-links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}/*# sourceMappingURL=main.css.map */
