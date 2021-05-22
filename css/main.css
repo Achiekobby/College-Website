@@ -154,12 +154,72 @@ section.course .row .course-col p {
   margin-top: 0;
 }
 section.course .row .course-col:hover {
-  transform: translateX(5px);
+  transform: translateY(-5px);
   background: #ffa2a2;
   color: #FFF;
 }
 section.course .row .course-col:hover p {
   color: #FFF;
+}
+
+section.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+section.campus h1 {
+  font-size: 2.3em;
+  font-weight: 600;
+}
+section.campus p {
+  padding-top: 20px;
+  color: #777;
+}
+section.campus .row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+section.campus .row .campus-col {
+  width: 20em;
+  border-radius: 1em;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+section.campus .row .campus-col img {
+  width: 100%;
+  display: block;
+}
+section.campus .row .campus-col .top-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+section.campus .row .campus-col .top-layer h3 {
+  position: absolute;
+  width: 100%;
+  font-weight: 500;
+  color: #FFF;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+section.campus .row .campus-col .top-layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+section.campus .row .campus-col .top-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
 }
 
 @media (max-width: 700px) {
