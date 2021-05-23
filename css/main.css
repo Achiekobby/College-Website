@@ -8,6 +8,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+html::-webkit-scrollbar {
+  width: 1.3em;
+}
+
+html::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #F44336;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -118,8 +130,6 @@ section.course h1 {
 }
 section.course p {
   color: #777;
-  font-size: 1.4em;
-  font-weight: 300;
   line-height: 1.3em;
   padding: 2em;
 }
@@ -222,6 +232,177 @@ section.campus .row .campus-col .top-layer:hover h3 {
   opacity: 1;
 }
 
+section.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+section.facilities h1 {
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 600;
+}
+section.facilities p {
+  padding-top: 20px;
+  color: #777;
+}
+section.facilities .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+section.facilities .row .facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+section.facilities .row .facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+section.facilities .row .facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+section.facilities .row .facilities-col p {
+  padding: 0;
+}
+
+section.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  text-align: center;
+}
+section.testimonials h1 {
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 600;
+}
+section.testimonials p {
+  padding-top: 20px;
+  color: #777;
+}
+section.testimonials .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+section.testimonials .row .testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #FFF3F3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+section.testimonials .row .testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+section.testimonials .row .testimonial-col p {
+  padding: 0;
+}
+section.testimonials .row .testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+section.testimonials .row .testimonial-col i {
+  color: #F44336;
+  font-size: 0.7em;
+  margin: 1em 0;
+}
+
+section.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+section.cta h1 {
+  color: #FFF;
+  font-size: 2.3em;
+  margin-bottom: 40px;
+  padding: 0;
+}
+section.cta .hero-btn {
+  position: relative;
+  display: inline-block;
+  color: #FFF;
+  padding: 1.2em 3em;
+  background: transparent;
+  font-size: 1.1em;
+  border: 2px solid #FFF;
+  cursor: pointer;
+  transition: 1s;
+  text-decoration: none;
+}
+section.cta .hero-btn:hover {
+  border: 2px solid var(--primaryColor);
+  background: var(--primaryColor);
+  color: #FFF;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.footer p {
+  color: #777;
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+  margin-bottom: 1%;
+}
+.footer p i {
+  color: #F44336;
+}
+.footer .icons {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.footer .icons i {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #F44336;
+  margin: 5px auto;
+  padding: 15px 10px;
+  background: #FFF;
+  color: #F44336;
+  margin-right: 1.2em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footer .icons i:hover {
+  color: #FFF;
+  background: #F44336;
+  transform: translateY(-5px);
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 700px) {
   .header {
     padding: 0;
@@ -275,5 +456,39 @@ section.campus .row .campus-col .top-layer:hover h3 {
   }
   .header .text-box p {
     font-size: 1em;
+  }
+
+  section.facilities .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.testimonials .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.testimonials .row .testimonial-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  section.cta h1 {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding: 0 0.2em;
+  }
+
+  section.footer p {
+    font-size: 0.85em;
+  }
+  section.footer .icons {
+    font-size: 0.95em;
+  }
+  section.footer .icons i {
+    margin-right: 0.3em;
+    outline: none;
+    border: none;
   }
 }/*# sourceMappingURL=main.css.map */
