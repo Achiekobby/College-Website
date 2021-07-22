@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -23,7 +23,7 @@ html::-webkit-scrollbar-thumb {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/banner.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/campus.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -423,7 +423,7 @@ section.cta .hero-btn:hover {
     width: 100%;
   }
   .header nav .nav-links {
-    position: absolute;
+    position: fixed;
     background: var(--primaryColor);
     height: 100vh;
     width: 100%;
